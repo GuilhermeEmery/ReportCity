@@ -83,12 +83,15 @@ jobs:
         with:
           version: 'latest'
 
-      - name: Deploy to Kubernetes (Staging)
+      - name: List files
+        run: ls -R Fiap.API.ReportCity/k8s
+
+      - name: Deploy to (Staging)
         run: |
-          kubectl apply -f Fiap.API.ReportCity/k8s/deployment-staging.yaml
+          kubectl apply -f Fiap.API.ReportCity/k8s/deployment-staging.yaml --namespace=staging
           kubectl apply -f Fiap.API.ReportCity/k8s/service-staging.yaml
 
-      - name: Deploy to Kubernetes (Production)
+      - name: Deploy to (Production)
         if: github.ref == 'refs/heads/feature/prod'
         run: |
           kubectl apply -f Fiap.API.ReportCity/k8s/deployment-prod.yaml
