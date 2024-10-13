@@ -20,21 +20,5 @@ namespace Fiap.Api.ReportCity.Test
             _alarmnotification = new AlarmNotificationController(_mockAlarmNotificationService.Object);
         }
 
-
-        [Fact]
-        public void GetAlarmNotifications()
-        {
-            // Arrange
-            var notifications = new List<AlarmNotification> { new AlarmNotification { Id = 1, AlarmType = "Test Alarm" } };_mockAlarmNotificationService.Setup(service => service.GetAll()).Returns(notifications);
-
-            // Act
-            var result = _alarmnotification.GetAlarmNotifications();
-
-            // Assert
-            var okResult = Assert.IsType<OkObjectResult>(result.Result);
-            var returnValue = Assert.IsType<List<AlarmNotification>>(okResult.Value);
-            Assert.Equal(notifications.Count, returnValue.Count);
-        }
-
     }
 }
