@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fiap-api-staging
+  labels:
+    app: fiap-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fiap-api
+  template:
+    metadata:
+      labels:
+        app: fiap-api
+    spec:
+      containers:
+      - name: fiap-api
+        image: report-city/fiapapireportcity:dev
+        ports:
+        - containerPort: 8080
