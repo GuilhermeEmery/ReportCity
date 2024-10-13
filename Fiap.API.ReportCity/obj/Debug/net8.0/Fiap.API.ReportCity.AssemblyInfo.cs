@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fiap.API.ReportCity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8da57e1f3c000f2e25a37370ee9c3df81fa3df4c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fiap.API.ReportCity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fiap.API.ReportCity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
