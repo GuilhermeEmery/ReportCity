@@ -45,7 +45,7 @@ jobs:
           context: .
           file: ./Fiap.API.ReportCity/Dockerfile
           push: true
-          tags: emeryguilherme/fiapapireportcity:latest
+          tags: emeryguilherme/fiapapireportcity:dev
 
   test:
     runs-on: ubuntu-latest
@@ -98,6 +98,11 @@ jobs:
         with:
           version: 'latest'
 
+      - name: Deploy to Staging
+        run: |
+          kubectl apply -f k8s/deployment.yaml --namespace=staging
+        
       - name: Deploy to Production
         run: |
-          kubectl apply -f deployment.yaml --namespace=production
+          kubectl apply -f k8s/deployment.yaml --namespace=production
+        

@@ -10,7 +10,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["Fiap.Api.ReportCity/Fiap.Api.ReportCity.csproj", "Fiap.Api.ReportCity/"]
-RUN dotnet restore "./Fiap.Api.ReportCity/Fiap.Api.ReportCity.csproj"
+RUN dotnet restore "./Fiap.Api.ReportCity.csproj"
 COPY . .
 WORKDIR "/src/Fiap.Api.ReportCity"
 RUN dotnet build "./Fiap.Api.ReportCity.csproj" -c $BUILD_CONFIGURATION -o /app/build
