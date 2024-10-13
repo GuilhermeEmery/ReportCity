@@ -51,27 +51,27 @@ jobs:
       #     tags: emeryguilherme/fiapapireportcity:dev
 
 
-    build-and-push-docker:
-        runs-on: ubuntu-latest
-        needs: build-and-test
-    
-        steps:
-          - name: Checkout code
-            uses: actions/checkout@v3
-    
-          - name: Log in to Docker Hub
-            uses: docker/login-action@v3
-            with:
-              username: emeryguilherme
-              password: dckr_pat_acvtXM6xm5RT465UTELf0tZPWr4
-    
-          - name: Build and push Docker image
-            uses: docker/build-push-action@v4
-            with:
-              context: .
-              file: Fiap.API.ReportCity/Dockerfile
-              push: true
-              tags: emeryguilherme/fiapapireportcity:dev
+  build-and-push-docker:
+      runs-on: ubuntu-latest
+      needs: build-and-test
+
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v3
+
+        - name: Log in to Docker Hub
+          uses: docker/login-action@v3
+          with:
+            username: emeryguilherme
+            password: dckr_pat_acvtXM6xm5RT465UTELf0tZPWr4
+
+        - name: Build and push Docker image
+          uses: docker/build-push-action@v4
+          with:
+            context: .
+            file: Fiap.API.ReportCity/Dockerfile
+            push: true
+            tags: emeryguilherme/fiapapireportcity:dev
 
   deploy-to-kubernetes:
     runs-on: ubuntu-latest
