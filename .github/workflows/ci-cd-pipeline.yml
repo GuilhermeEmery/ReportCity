@@ -40,12 +40,12 @@ jobs:
           dotnet build Fiap.API.ReportCity.Test/Fiap.API.ReportCity.Test.csproj --configuration Release
       # construir e publicar Docker
       - name: Build and push Docker image
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v6
         with:
           context: .
           file: ./Fiap.API.ReportCity/Dockerfile
           push: true
-          tags: emeryguilherme/fiapapireportcity:${{ github.sha }}
+          tags: emeryguilherme/fiapapireportcity:latest
 
   test:
     runs-on: ubuntu-latest
