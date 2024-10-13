@@ -83,13 +83,13 @@ jobs:
         with:
           version: 'latest'
 
-      - name: Deploy to (Staging)
-        run: |
-          kubectl apply -f k8s/deployment-staging.yaml --namespace=staging
-          kubectl apply -f k8s/service-staging.yaml
+      # - name: Deploy to (Staging)
+      #   run: |
+      #     kubectl apply -f k8s/deployment-staging.yaml --namespace=staging
+      #     kubectl apply -f k8s/service-staging.yaml
 
-      - name: Deploy to (Production)
-        if: github.ref == 'refs/heads/feature/prod'
-        run: |
-          kubectl apply -f k8s/deployment-prod.yaml
-          kubectl apply -f k8s/service-prod.yaml
+      # - name: Deploy to (Production)
+      #   if: github.ref == 'refs/heads/feature/prod'
+      #   run: |
+      #     kubectl apply -f k8s/deployment-prod.yaml
+      #     kubectl apply -f k8s/service-prod.yaml
