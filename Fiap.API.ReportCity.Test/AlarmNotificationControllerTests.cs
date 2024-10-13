@@ -20,5 +20,12 @@ namespace Fiap.Api.ReportCity.Test
             _alarmnotification = new AlarmNotificationController(_mockAlarmNotificationService.Object);
         }
 
+        [Fact]
+        public void GetAlarmNotifications_ReturnsOkResult()
+        {
+            // Assert
+        }
+
+
     }
 }

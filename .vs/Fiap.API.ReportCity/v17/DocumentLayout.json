@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\emery\\Documents\\FIAP\\Tarefa cap 6\\Fiap.API.ReportCity\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9DF7EDA-6728-4521-BBAD-5D48A974CB18}|Fiap.API.ReportCity.Test\\Fiap.API.ReportCity.Test.csproj|c:\\users\\emery\\documents\\fiap\\tarefa cap 6\\fiap.api.reportcity\\fiap.api.reportcity.test\\alarmnotificationcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9DF7EDA-6728-4521-BBAD-5D48A974CB18}|Fiap.API.ReportCity.Test\\Fiap.API.ReportCity.Test.csproj|solutionrelative:fiap.api.reportcity.test\\alarmnotificationcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9DF7EDA-6728-4521-BBAD-5D48A974CB18}|Fiap.API.ReportCity.Test\\Fiap.API.ReportCity.Test.csproj|c:\\users\\emery\\documents\\fiap\\tarefa cap 6\\fiap.api.reportcity\\fiap.api.reportcity.test\\incidentreportcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9DF7EDA-6728-4521-BBAD-5D48A974CB18}|Fiap.API.ReportCity.Test\\Fiap.API.ReportCity.Test.csproj|solutionrelative:fiap.api.reportcity.test\\incidentreportcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AlarmNotificationControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\emery\\Documents\\FIAP\\Tarefa cap 6\\Fiap.API.ReportCity\\Fiap.API.ReportCity.Test\\AlarmNotificationControllerTests.cs",
+              "RelativeDocumentMoniker": "Fiap.API.ReportCity.Test\\AlarmNotificationControllerTests.cs",
+              "ToolTip": "C:\\Users\\emery\\Documents\\FIAP\\Tarefa cap 6\\Fiap.API.ReportCity\\Fiap.API.ReportCity.Test\\AlarmNotificationControllerTests.cs",
+              "RelativeToolTip": "Fiap.API.ReportCity.Test\\AlarmNotificationControllerTests.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAuwBkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T21:37:21.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IncidentReportControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\emery\\Documents\\FIAP\\Tarefa cap 6\\Fiap.API.ReportCity\\Fiap.API.ReportCity.Test\\IncidentReportControllerTests.cs",
+              "RelativeDocumentMoniker": "Fiap.API.ReportCity.Test\\IncidentReportControllerTests.cs",
+              "ToolTip": "C:\\Users\\emery\\Documents\\FIAP\\Tarefa cap 6\\Fiap.API.ReportCity\\Fiap.API.ReportCity.Test\\IncidentReportControllerTests.cs",
+              "RelativeToolTip": "Fiap.API.ReportCity.Test\\IncidentReportControllerTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T21:36:53.798Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
